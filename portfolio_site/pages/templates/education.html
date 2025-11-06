@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+     <title>Portfolio_Site</title>
+    
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">PORTFOLIO</a>
+  </div>
+</nav>
+<div class="jumbotron">
+            FILL IN YOUR INFORMATION <i class="fa-solid fa-pen-nib"></i>
+   
+<form method="post" action="/"class="p-2 flex flex-col gap-2">
+    {% csrf_token %}
+    <p class="text-muted"> Provide the following information</p>
+    <div class="my-2">
+        <label for=""> School_name</label><i class="fa-solid fa-circle-user"></i>
+        <input type="text"required name="School_name"class="form-control">
+    </div>
+    <div class="my-2">
+        <label for="">Graduation_year</label><i class="fa-solid fa-user-tag"></i>
+        <input type="number"required name="Graduation_year" class="form-control">
+        </div>
+    <button class="btn btn-success" type="submit"> SUBMIT </button>
+</form>
+<div class ="card rounded-lg m-4 shadow p-4">
+    <div class="card-header bg-white text-center">
+ 
+    <div class ="card rounded-lg m-4 shadow p-4">
+    <div class="card-header bg-white text-center">
+        ID CARDS
+    </div>
+    <div class="row">
+    <div class="col-15">
+    <h4>School_name:{{name}}</h4>
+    <h4>Graduation_year:{{year}}</h4>
+    </div>
+    <div class="col-2"> </div>
+    <img src="">
+</div>
+</div>
+    
+</body>
+</html>
